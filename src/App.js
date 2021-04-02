@@ -1,4 +1,5 @@
 import Comment from './comment';
+import Confirm from "./Confirm";
 
 function getText() {
   return "Enter your Name";
@@ -20,9 +21,16 @@ function App() {
           <input type="text" id="name"/>
           <button style={{backgroundColor: 'red'}}>{buttonText}</button>
         </div>
-          <div>
-              <Comment author="pankajan"/>
+
+          <Comment author="pankajan"/>
+          <Confirm>
+              <Comment author="Sabinaya"/>
+          </Confirm>
+          <div style={{paddingTop: 50}}>
           </div>
+          <Confirm>
+              This is blank
+          </Confirm>
       </div>
   );
 }
