@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+function getText() {
+  return "Enter your Name";
+}
+
+function getTime() {
+  return new Date().toLocaleTimeString();
+}
 
 function App() {
+  const buttonText = 'Click me!';
+  const jsObj = { text: "This is a sample"};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="java">
+      <div>Hi there , {jsObj.text} </div>
+      <div> {getTime()}</div>
+      <label className="Name" htmlFor="name">{getText()}</label>
+      <input type="text" id="name"/>
+      <button style={{backgroundColor: 'red'}}>{buttonText}</button>
     </div>
   );
 }
