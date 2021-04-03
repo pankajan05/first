@@ -1,5 +1,6 @@
 import Comment from './comment';
 import Confirm from "./Confirm";
+import Class from './Class';
 
 function getText() {
     window.navigator.geolocation.getCurrentPosition(
@@ -35,6 +36,11 @@ function App() {
           <Confirm>
               This is blank
           </Confirm>
+
+          <div style={{paddingTop: 50}}>
+          </div>
+
+          <Class/>
       </div>
   );
 }
