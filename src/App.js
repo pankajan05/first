@@ -3,10 +3,7 @@ import Confirm from "./Confirm";
 import Class from './Class';
 
 function getText() {
-    window.navigator.geolocation.getCurrentPosition(
-        position => console.log(position),
-        (err) => console.log(err)
-    );
+
   return "Enter your Name";
 }
 
