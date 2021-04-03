@@ -5,14 +5,14 @@ class Class extends React.Component {
         super(props);
         this.state = {lat: null, error: null};
 
-        window.navigator.geolocation.getCurrentPosition(
-            position => this.setState({lat : position.coords.latitude}),
-            (err) => this.setState({error : err.message})
-        );
     }
 
     //content visible on the screen and good for data loading
     componentDidMount() {
+        window.navigator.geolocation.getCurrentPosition(
+            position => this.setState({lat : position.coords.latitude}),
+            (err) => this.setState({error : err.message})
+        );
     }
 
     //sit and waiting for the updates
