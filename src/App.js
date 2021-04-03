@@ -2,6 +2,10 @@ import Comment from './comment';
 import Confirm from "./Confirm";
 
 function getText() {
+    window.navigator.geolocation.getCurrentPosition(
+        position => console.log(position),
+        (err) => console.log(err)
+    );
   return "Enter your Name";
 }
 
