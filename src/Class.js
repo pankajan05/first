@@ -11,6 +11,18 @@ class Class extends React.Component {
         );
     }
 
+    //content visible on the screen and good for data loading
+    componentDidMount() {
+    }
+
+    //sit and waiting for the updates
+    componentDidUpdate(prevProps, prevState, snapshot) {
+    }
+
+    //sit and wait until component is no longer shown
+    componentWillUnmount() {
+    }
+
     render() {
         if(this.state.lat && !this.state.error) {
             return <div>
