@@ -7,6 +7,9 @@ class Class extends React.Component {
 
     }
 
+    //state initiliztion good practice
+    state = {lat: null };
+
     //content visible on the screen and good for data loading
     componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
