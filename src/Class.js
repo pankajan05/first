@@ -1,4 +1,5 @@
 import React from 'react';
+import Season from './Season';
 
 class Class extends React.Component {
     constructor(props){
@@ -29,7 +30,7 @@ class Class extends React.Component {
     render() {
         if(this.state.lat && !this.state.error) {
             return <div>
-                Latitude: {this.state.lat}
+                <Season lat= {this.state.lat}/>
             </div>
         }else if (!this.state.lat && this.state.error){
             return <div>
