@@ -23,3 +23,7 @@ body{
     bottom: 10px;
     left: 200px;
 }
+
+.LoaderExampleText{
+    margin: 300px;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Season from './Season';
+import LoaderExampleText from './Loader';
 
 class Class extends React.Component {
     constructor(props){
@@ -38,7 +39,7 @@ class Class extends React.Component {
             </div>
         } else{
             return <div>
-                Loading............
+                <LoaderExampleText/>
             </div>
         }
     }

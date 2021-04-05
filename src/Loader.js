@@ -1,24 +1,16 @@
 import React from 'react'
-import { Dimmer, Loader, Image, Segment } from 'semantic-ui-react'
+import { Dimmer, Loader, Segment } from 'semantic-ui-react'
 
-const LoaderExampleText = () => (
-    <div>
-        <Segment>
-            <Dimmer active>
-                <Loader>Loading</Loader>
+const LoaderExampleText = (props) => (
+    <div >
+        <Segment style={{paddingTop:200}}>
+            <Dimmer active >
+                <Loader >{props.text}</Loader>
             </Dimmer>
-
-            <Image src='/images/wireframe/short-paragraph.png' />
-        </Segment>
-
-        <Segment>
-            <Dimmer active inverted>
-                <Loader inverted>Loading</Loader>
-            </Dimmer>
-
-            <Image src='/images/wireframe/short-paragraph.png' />
         </Segment>
     </div>
-)
+);
+
+LoaderExampleText.defaultProps = {text: "loading"};
 
 export default LoaderExampleText
