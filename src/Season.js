@@ -22,9 +22,9 @@ const Season = (pros) => {
     const season = getSeason(pros.lat, new Date().getMonth());
     const {icon, phrase} = seasonalConfig[season];
 
-    return (<div>
+    return (<div style={{backgroundColor: 'white'}}>
         <i className={ `top-left massive ${icon} icon`}/>
-        <h1>{phrase}</h1>
+        <h1 className="center">{phrase}</h1>
         <i className={ `bottom-right massive ${icon} icon`}/>
     </div>);
 };

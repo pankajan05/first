@@ -21,9 +21,17 @@ body{
 .bottom-right{
     position: relative;
     bottom: 10px;
-    left: 200px;
+    left: 90%;
 }
 
 .LoaderExampleText{
     margin: 300px;
+}
+
+.border{
+    border: solid 10px black;
+}
+
+.center{
+    text-align: center;
 }

@@ -28,7 +28,7 @@ class Class extends React.Component {
     componentWillUnmount() {
     }
 
-    render() {
+    renderContent() {
         if(this.state.lat && !this.state.error) {
             return <div>
                 <Season lat= {this.state.lat}/>
@@ -42,6 +42,14 @@ class Class extends React.Component {
                 <LoaderExampleText/>
             </div>
         }
+    }
+
+    render() {
+        return (
+            <div className="border red">
+                {this.renderContent()}
+            </div>
+        );
     }
 }
 
